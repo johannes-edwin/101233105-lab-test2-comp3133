@@ -1,0 +1,31 @@
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-item: center;
+}
+
+.max-w-2xl {
+  max-width: 1024px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.py-2 {
+  padding: 8px 0;
+}

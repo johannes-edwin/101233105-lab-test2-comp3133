@@ -1,0 +1,15 @@
+.flex {
+  display: flex;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-item: center;
+}

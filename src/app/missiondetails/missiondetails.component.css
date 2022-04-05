@@ -1,0 +1,45 @@
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-item: center;
+}
+
+.max-w-2xl {
+  max-width: 1024px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.py-1 {
+  padding: 4px 0;
+}
+
+.py-2 {
+  padding: 8px 0;
+}
+
+.mx-1 {
+  margin: 0 4px;
+}
+
+.title {
+  color: #e34234;
+  font-weight: 600;
+  font-size: 1.25rem;
+}

@@ -1,0 +1,48 @@
+<div class="flex w-full justify-center items-center">
+  <div class="flex flex-col justify-center items-center w-full max-w-2xl">
+    <h1 class="w-full">SpaceX Mission Details</h1>
+    <div class="w-full" *ngIf="missions.length !== 0">
+      <mat-card
+        class="flex flex-col"
+        style="background-color: bisque !important"
+      >
+        <div class="flex flex-row">
+          <img src="{{ missions[index].links.mission_patch_small }}" />
+          <div class="flex flex-col py-1" style="margin-left: 24px;">
+            <h3 class="title">Mission - {{ missions[index].mission_name }}</h3>
+            <p>Name: {{ missions[index].mission_name }}</p>
+            <p>Launch Year: {{ missions[index].launch_year }}</p>
+            <h3 class="title">Rocket</h3>
+            <p>Name: {{ missions[index].rocket.rocket_name }}</p>
+            <p>Type: {{ missions[index].rocket.rocket_type }}</p>
+            <h3 class="title">Launch Site</h3>
+            <p>Name: {{ missions[index].rocket.rocket_type }}</p>
+          </div>
+        </div>
+        <div class="py-2"></div>
+        <div class="flex flex-col">
+          <h3 class="title">Launch Details</h3>
+          <p>{{ missions[index].details }}</p>
+          <h3 class="title">More Info on Launch Details</h3>
+          <div class="flex flex-row">
+            <a class="mx-1" href="{{ missions[index].links.article_link }}" target="_blank">
+              <mat-icon aria-hidden="false" aria-label="Example home icon"
+                >public</mat-icon
+              >
+            </a>
+            <a class="mx-1" href="{{ missions[index].links.wikipedia }}" target="_blank">
+              <mat-icon aria-hidden="false" aria-label="Example home icon"
+                >sticky_note_2</mat-icon
+              >
+            </a>
+            <a class="mx-1" href="{{ missions[index].links.video_link }}" target="_blank">
+              <mat-icon aria-hidden="false" aria-label="Example home icon"
+                >videocam</mat-icon
+              >
+            </a>
+          </div>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+</div>
